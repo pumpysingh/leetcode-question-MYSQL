@@ -1,0 +1,3 @@
+CREATE TABLE Users1(user_id INT PRIMARY KEY,name VARCHAR(40));
+INSERT INTO Users1 VALUES(1,"alice"),(2,"bOB");
+SELECT user_id,CONCAT(UPPER(LEFT(name,1)),LOWER(SUBSTRING(name,2))) AS name FROM Users1;
